@@ -2,10 +2,10 @@ package com.pilhas;
 
 public class No<T> {
     private T conteudo;
-    private No proximoNo;
+    private No refNo;
 
     public No(T conteudo) {
-        this.proximoNo = null;
+        this.refNo = null;
         this.conteudo = conteudo;
     }
 
@@ -17,12 +17,12 @@ public class No<T> {
         this.conteudo = conteudo;
     }
 
-    public No getProximoNo() {
-        return proximoNo;
+    public No getRefNo() {
+        return refNo;
     }
 
-    public void setProximoNo(No proximoNo) {
-        this.proximoNo = proximoNo;
+    public void setRefNo(No refNo) {
+        this.refNo = refNo;
     }
 
     @Override
