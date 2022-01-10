@@ -7,5 +7,8 @@ public class Main {
         lista.add("Primeiro");
         lista.add("Segundo");
         lista.add("Terceiro");
+        lista.add("Quarto");
+
+        System.out.println(lista.get(2));
     }
 }
