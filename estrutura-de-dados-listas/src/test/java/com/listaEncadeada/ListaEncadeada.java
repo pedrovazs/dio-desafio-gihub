@@ -79,9 +79,14 @@ public class ListaEncadeada<T> {
 
     @Override
     public String toString() {
-        return "ListaEncadeada{" +
-                "refEntrada=" + refEntrada +
-                '}';
+        String strRetorno = "";
+        No<T> noAuxliar = refEntrada;
+        for (int i = 0; i < this.size(); i++) {
+            strRetorno += "[No{Objeto= " + noAuxliar.getObject() + "}] -> ";
+            noAuxliar = noAuxliar.getProximoNo();
+        }
+        strRetorno += "null";
+        return strRetorno;
     }
 
     // Pego um nó de acordo com o índice passado
