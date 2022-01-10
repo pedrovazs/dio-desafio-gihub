@@ -2,15 +2,25 @@ package com.fila;
 
 public class Main {
     public static void main(String[] args) {
-        No no1 = new No("no1");
-        No no2 = new No("no2");
-        No no3 = new No("no3");
+        // Instanciando a fila
+        Fila<String> fila = new Fila<>();
 
-        Fila fila = new Fila();
-        fila.enqueue(no1);
-        fila.enqueue(no2);
-        fila.enqueue(no3);
+        // Adicionando novos objetos para a fila
+        fila.enqueue("Primeiro");
+        fila.enqueue("Segundo");
+        fila.enqueue("Terceiro");
+        fila.enqueue("Quarto");
 
+        // Imprimindo a fila
         System.out.println(fila);
+
+        // Retirando o primeiro elemento e retornando
+        System.out.println(fila.dequeue());
+
+        // Retornando o primeiro da fila
+        System.out.println(fila.first());
+
+        // Verificando se a fila está vazia
+        System.out.println(fila.isEmpty());
     }
 }
